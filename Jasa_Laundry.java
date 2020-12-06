@@ -25,7 +25,7 @@ public class Jasa_Laundry{
                     || kota_Asal.equalsIgnoreCase("BEKASI BARAT")  || kota_Asal.equalsIgnoreCase("BEKASI UTARA")
                      || kota_Asal.equalsIgnoreCase("BEKASI SELATAN") || kota_Asal.equalsIgnoreCase("BEKASI TIMUR")
                       || kota_Asal.equalsIgnoreCase("BEKASI") || kota_Asal.equalsIgnoreCase("JAKARTA")){
-                gratisOngkir = "-----SELAMAT ANDA MENDAPATKAN GRATIS ONGKIR-----";
+                gratisOngkir = "---- SELAMAT ANDA MENDAPATKAN GRATIS ONGKIR ----";
         
                 System.out.print("ALAMAT TEMPAT TINGGAL : ");
                 String alamat = input.nextLine();
@@ -34,8 +34,8 @@ public class Jasa_Laundry{
                 String bbb ="";
                 do{ 
                     System.out.println("JENIS PAKET ");
-                    System.out.println("1. Express ");
-                    System.out.println("2. Reguler ");
+                    System.out.println("1. Express                     >>> Rp.15.000/kg");
+                    System.out.println("2. Reguler                     >>> Rp.7.000/kg");
                     System.out.print("PILIH JENIS PAKET : ");
                     String jenis_Paket = input.nextLine();
                     
@@ -67,15 +67,15 @@ public class Jasa_Laundry{
                 do {
                     do{
                         System.out.println("JENIS PAKAIAN ");
-                        System.out.println("1. Blus (Blouse)");
-                        System.out.println("2. Jas (Jacket)");
-                        System.out.println("3. Kemeja (Shirt)");
-                        System.out.println("4. Rok (Skirt)");
-                        System.out.println("5. Mantel (Coat)");
-                        System.out.println("6. Gaun (Dress)");
-                        System.out.println("7. Rompi (Vest)");
-                        System.out.println("8. Celana (Pant)");
-                        System.out.println("9. Celana Terusan (Jump Suite)");
+                        System.out.println("1. Blus (Blouse)               >>> Rp.18.500/kg");
+                        System.out.println("2. Jas (Jacket)                >>> Rp.72.000/kg");
+                        System.out.println("3. Kemeja (Shirt)              >>> Rp.14.500/kg");
+                        System.out.println("4. Rok (Skirt)                 >>> Rp.21.000/kg");
+                        System.out.println("5. Mantel (Coat)               >>> RP.27.500/kg");
+                        System.out.println("6. Gaun (Dress)                >>> Rp.124.000/kg");
+                        System.out.println("7. Rompi (Vest)                >>> Rp.72.000/kg");
+                        System.out.println("8. Celana (Pant)               >>> Rp.14.500/kg");
+                        System.out.println("9. Celana Terusan (Jump Suite) >>> Rp.40.000/kg");
                         System.out.print("PILIH JENIS PAKAIAN : ");
                         String jenis_Pakaian = input.nextLine();
                         
@@ -156,13 +156,14 @@ public class Jasa_Laundry{
                 if(Integer.parseInt(berat) > 5){
                     diskon = (hagra_jumlah_pakaian * 10)/100;
                     diskon = hagra_jumlah_pakaian - diskon + harga_kiloan;
-                    dapat_diskon = "---------SELAMAT ANDA MENDAPATKAN DISKON--------";
+                    dapat_diskon = "--------- SELAMAT ANDA MENDAPATKAN DISKON 10% --------";
                 }else{
                     diskon = hagra_jumlah_pakaian + harga_kiloan;
                 }
 
                 System.out.println("\n------------------------------------------------");
-                System.out.println("-----------------DITAIL PESANAN-----------------");
+                System.out.println("-----------------DETAIL PESANAN-----------------");
+                System.out.println("------------------------------------------------");
                 System.out.println("");
                 System.out.println("NAMA : "+nama);
                 System.out.println("KOTA ASAL : "+kota_Asal);
@@ -178,7 +179,9 @@ public class Jasa_Laundry{
                 System.out.println(gratisOngkir);
                 
                 System.out.println("");
-                System.out.println("TOTAL HARGA : " + diskon);
+                //System.out.println("HARGA PAKET PAKAIAN : " + harga_paket +" * "+ Integer.parseInt(berat) + " = " + (harga_paket*Integer.parseInt(berat)));
+                //System.out.println("HARGA JENIS PAKAIAN : " + harga_perpakaian);
+                System.out.println("TOTAL HARGA : Rp." + diskon);
                 System.out.println("\n------------------------------------------------");
                 System.out.print("Lanjut ke pembayaran (y/n)?");
                 String lanjut_Pembayaran = input.nextLine();
@@ -192,13 +195,13 @@ public class Jasa_Laundry{
                     switch (jenis_Pembayaran) {
                         case "1":
                             System.out.println("SILAHKAN MELAKUKAN PEMBAYARAN MELALUI KURIR");
-                            System.out.println("--------------BARANG DIANTAR--------------");
+                            System.out.println("-----SILAHKAN MENUNGGU BARANG DIANTAR-----");
                              aaa = "no";
                             break;
                     
                         case "2":
                             System.out.println("PEMBAYARAN SEDANG DI PROSES---------------");
-                            System.out.println("--------------BARANG DIANTAR--------------");
+                            System.out.println("-----SILAHKAN MENUNGGU BARANG DIANTAR-----");
                             aaa = "no";
                             break;
                             
