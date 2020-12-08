@@ -1,3 +1,13 @@
+// 
+// 
+// Kelompok 7
+// Melynda Putri Tri Utami (1402018131)
+// Anak Anung Anindito (1402018132)
+// Muhammad Akhdan Zuloski P. (1402018135)
+// Siti Haswy Raudhahtul Farhah (1402018137)
+// Shafira Fajriyanti (1402018138)
+// 
+// 
 import java.util.Scanner;
 import java.util.*;
 public class Jasa_Laundry{
